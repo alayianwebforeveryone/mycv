@@ -16,15 +16,23 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.firstbg{
+  background-color: #BAFF39;
 }
+.headColor{
+  color: #BAFF39;
+}
+.bgc{
+  background-color: #6E6E6E;
+}
+text-gradient {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#aa2bf9, #333);
+ 
+  
+}
+
 
 @layer utilities {
   .text-balance {
