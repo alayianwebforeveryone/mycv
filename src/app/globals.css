@@ -33,7 +33,23 @@ text-gradient {
   
 }
 
-
+.heading{
+  font-size: 32px;
+  color: #304B69;
+  text-align: center;
+  font-weight:  bold;
+  
+}
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+}
+.hideScrollbar::-moz-scrollbar {
+  height: 0 !important;
+  width: 0px !important;
+  background: transparent !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

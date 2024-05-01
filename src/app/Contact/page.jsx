@@ -1,11 +1,14 @@
 import React from 'react'
 
-function Contact() {
+import Contact from '../../components/Contact/index';
+
+
+function Page() {
   return (
-    <div className='bg-red-200 '>
-      contact
+    <div className=' mt-32 '>
+     <Contact/>
     </div>
   )
 }
 
-export default Contact
+export default Page

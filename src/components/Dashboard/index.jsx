@@ -1,15 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import professional from "../../../Assets/Images/practice.png";
+import Resume from "./Resume"
 
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section >
+      <Resume isVisible={showModal} close={() => setShowModal(false)} />
       <div className="lg:pt-44 px-2 py-12 md:py-36 mt-12 md:mt-0  lg:px-16 bg-[#c8dce6] w-[100%] ">
         <div className="grid grid-cols-1   sm:grid-cols-12 ">
           <motion.div
@@ -44,12 +47,14 @@ const Home = () => {
               Journey into web development
               with <span className="text-[#4a3692]  sm:text-md underline font-bold uppercase">Alayian Saeed.</span>
             </p>
-            <div className="  ">
+            <div className=" ">
               <Link
                 href="/"
                 className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-[#4b7ba8] text-white mt-3"
               >
-                <span className="block bg-[#00ABE4] mx-20   md:mx-0  rounded-full px-8 py-2">
+                <span 
+                 onClick={() => setShowModal(true)}
+                className="block bg-[#00ABE4] mx-20   md:mx-0  rounded-full px-8 py-2">
                   Open CV
                 </span>
               </Link>
@@ -85,7 +90,7 @@ const Home = () => {
       </div>
 
         <div className="py-8 px-4  mx-auto  bg-[#c8dce6]  border-t-2    mt-24   font-bold sm:py-16 xl:px-16 w-full">
-          <h2 className="text-4xl  text-center    text-[#304B69]">Ready to Boost your Business ?</h2>
+          <h2 className="text-4xl  text-center    text-[#304B69] heading">Ready to Boost your Business ?</h2>
           <p className="mt-8  mx-4  text-lg  font-medium text-justify lg:w-"> Cultivating Innovation, 
           Building Excellence. Welcome to a digital realm where creativity meets functionality. We donot 
           just create websites; we craft digital experiences that resonate. Elevate your online

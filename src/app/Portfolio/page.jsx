@@ -1,11 +1,12 @@
 import React from 'react'
+import Portfolio from "../../components/Portfolio"
 
-function Portfilio() {
+function Page() {
   return (
-    <div>
-      Portfolio
+    <div className='mt-32'>
+      <Portfolio/>
     </div>
   )
 }
 
-export default Portfilio
+export default Page
