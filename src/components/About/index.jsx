@@ -55,7 +55,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className=" w-full " id="about">
+    <section className=" w-full my-20 " id="about">
       <div className="py-8 px-12 flex-col   md:flex-row   gap-4  flex md:gap-48 justify-between">
         <div className="rounded-t-full md:w-[25%] w-[80%]  mx-auto   ">
         <Image src={About}  className="rounded-t-full  object-contain"/>
