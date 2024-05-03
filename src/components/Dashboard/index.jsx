@@ -97,8 +97,8 @@ const Home = () => {
            presence with us – where every click tells a story, and every pixel paints a masterpiece. 
            In a rapidly evolving digital landscape, the key to success lies in staying ahead.
             Our tailored solutions are designed to propel your business to new heights, leveraging
-            cutting-edge strategies and innovative technologies. Whether you're aiming to enhance your
-            online presence, optimize operations, or reach a broader audience, we're here to navigate the
+            cutting-edge strategies and innovative technologies. Whether you&apos;re aiming to enhance your
+            online presence, optimize operations, or reach a broader audience, we&apos;re here to navigate the
             digital realm with you.</p>
         </div>
     </section>

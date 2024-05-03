@@ -46,16 +46,16 @@ const Contact = () => {
       className="grid  md:grid-cols-2 my-12 md:my-2 py-36 md:gap-8   xl:gap-4  lg:gap-24 relative md:px-8 lg:px-16 xl:px-24"
     >
       <div className="  z-10 px-8 md:px-0">
-        <h5 className="text-[36px] text-center md:text-left  text-[#304B69] text-left font-bold  my-2">
+        <h5 className="text-[36px] md:text-left  text-[#304B69] text-left font-bold  my-2">
           Get in Touch
         </h5>
         <p className=" mb-4 max-w-md text-justify">
-          {" "}
-          I'm passionate about crafting digital experiences that leave a lasting impact. 
-          Whether you're looking to bring your ideas to life, enhance your online presence, 
-          or optimize existing web solutions, I'm here to help. Let's discuss how we can collaborate 
+          
+          I&apos;m passionate about crafting digital experiences that leave a lasting impact. 
+          Whether you&apos;re looking to bring your ideas to life, enhance your online presence, 
+          or optimize existing web solutions, I&apos;m here to help. Let us discuss how we can collaborate 
           to turn your vision into a seamlessly functional and visually stunning website. Reach out, 
-          and let's embark on a journey to elevate your online presence together."
+          and let&apos;s embark on a journey to elevate your online presence together.
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
