@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import {TypeAnimation} from "react-type-animation";
+import {motion} from "framer-motion";
 import Link from "next/link";
 import professional from "../../../Assets/Images/practice.png";
 import Resume from "./Resume"
@@ -23,7 +23,7 @@ const Home = () => {
           >
             <h1 className=" text-[#304B69] mb-4 text-3xl   lg:text-5xl lg:leading-normal font-extrabold">
               <span className="text-[#4a3692]  ">
-                Hello, I&apos;m{" "}
+                Hello, I&apos;m
               </span>
               <br></br>
               <TypeAnimation
