@@ -71,16 +71,16 @@ const Edit = ({ isVisible, close }: any) => {
                 </div>
            
 
-            <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 mt-24  pt-20">
+            <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16   pt-12">
 
                 {/* AI writing */}
                 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex flex-col items-center pb-6">
-                        <Link href="https://ybm-admin.vercel.app/dashboard" className="m-2"> <Image src={sss} alt="soe" className='rounded-[10px]' /></Link>
+                        <Link href="https://alayianwebforeveryone.github.io/portfolio/" className="m-2"> <Image src={sss} alt="soe" className='rounded-[10px]' /></Link>
                         <h5 className="mb-1 mt-4 text-3xl font-medium text-gray-900 dark:text-white">SSS</h5>
                         <span className="text-sm text-gray-500 dark:text-gray-400">S Software Solutions</span>
                         <div className="flex mt-4 md:mt-6">
-                            <Link href="https://ybm-admin.vercel.app/dashboard" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
+                            <Link href="https://alayianwebforeveryone.github.io/portfolio/" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
                         </div>
                     </div>
                 </div>
@@ -88,11 +88,11 @@ const Edit = ({ isVisible, close }: any) => {
              
                 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex flex-col items-center pb-6">
-                        <Link href="https://ybm-admin.vercel.app/dashboard" className="m-2"> <Image src={ybm} alt="soe" className='rounded-[10px]' /></Link>
-                        <h5 className="mb-1 mt-4 text-3xl font-medium text-gray-900 dark:text-white">YBM</h5>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">YBM Admin Pannel</span>
+                        <Link href="https://www.aiwriter.services/" className="m-2"> <Image src={ybm} alt="soe" className='rounded-[10px]' /></Link>
+                        <h5 className="mb-1 mt-4 text-3xl font-medium text-gray-900 dark:text-white">AI WRITER</h5>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">AI Writign Services</span>
                         <div className="flex mt-4 md:mt-6">
-                            <Link href="https://ybm-admin.vercel.app/dashboard" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
+                            <Link href="https://www.aiwriter.services/" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const Edit = ({ isVisible, close }: any) => {
             </div>
 
 
-            <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 mt-24  pt-20">
+            <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 mt-8  pt-8">
 
                 {/* Smart waste management system */}
                 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -140,11 +140,11 @@ const Edit = ({ isVisible, close }: any) => {
                 </div>
                 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex flex-col items-center pb-6">
-                        <Link href="https://ybm-admin.vercel.app/dashboard" className="m-2"> <Image src={essay} alt="soe" className=' h-[175px] rounded-[10px]' /></Link>
+                        <Link href="https://essay-writing-services-7yaf.vercel.app/" className="m-2"> <Image src={essay} alt="soe" className=' h-[175px] rounded-[10px]' /></Link>
                         <h5 className="mb-1 mt-4 text-3xl font-medium text-gray-900 dark:text-white">Essay</h5>
                         <span className="text-sm text-gray-500 dark:text-gray-400">Essay Writing Services</span>
                         <div className="flex mt-4 md:mt-6">
-                            <Link href="https://ybm-admin.vercel.app/dashboard" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
+                            <Link href="https://essay-writing-services-7yaf.vercel.app/" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Vist</Link>
                         </div>
                     </div>
                 </div>
