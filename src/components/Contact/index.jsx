@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="grid  md:grid-cols-2 my-12 md:my-2 py-36 md:gap-8   xl:gap-4  lg:gap-24 relative md:px-8 lg:px-16 xl:px-24"
+      className="grid  md:grid-cols-2 my-12 md:my-2 py-36 md:gap-8   xl:gap-4  lg:gap-24 relative md:px-8 lg:px-16 xl:px-48"
     >
       <div className="  z-10 px-8 md:px-0">
         <h5 className="text-[36px] md:text-left  text-[#304B69] text-left font-bold  my-2">
@@ -61,13 +61,13 @@ const Contact = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/alayianwebforeveryone/">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="ttps://www.linkedin.com/in/alayian-saeed-34287a219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
-          <Link href="linkedin.com" className="">
+          <Link href="https://wa.me/923488759075" className="">
             <Image src={phone} className = "h-12 w-14" alt="phone Icon" />
           </Link>
         </div>
