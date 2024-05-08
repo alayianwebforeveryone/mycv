@@ -8,7 +8,7 @@ import Image from 'next/image';
 import logo from './../../../Assets/Images/My logo.png';
 import menu from './../../../Assets/Icons/menu.svg';
 import close from './../../../Assets/Icons/close.svg';
-import { useRouter } from "next/navigation";
+
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
