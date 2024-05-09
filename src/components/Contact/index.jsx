@@ -43,9 +43,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="grid  md:grid-cols-2 my-12 md:my-2 py-36 md:gap-8   xl:gap-4  lg:gap-24 relative md:px-8 lg:px-16 xl:px-48"
+      className="grid  md:grid-cols-2 my-12 md:my-2 py-36 md:gap-8 z   xl:gap-4  lg:gap-24 relative md:px-8 lg:px-16 xl:px-48"
     >
-      <div className="  z-10 px-8 md:px-0">
+      <div className="   px-8 md:px-0">
         <h5 className="text-[36px] md:text-left  text-[#304B69] text-left font-bold  my-2">
           Get in Touch
         </h5>

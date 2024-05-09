@@ -28,9 +28,9 @@ const Edit = ({ isVisible, close }: any) => {
         <div
             id="conatiner"
             onClick={handleClose}
-            className="  fixed inset-0  bg-black/25 flex justify-center items-center">
+            className="  fixed inset-0 z-50  bg-black/25 flex justify-center items-center">
 
-            <div className="  w-[90%] lg:w-[70%] overflow-y-scroll hideScrollbar max-h-[70%] py-4 bg-white rounded-xl px-5  ">
+            <div className="  w-[90%] lg:w-[70%] overflow-y-scroll hideScrollbar max-h-[70%] py-4 bg-white rounded-xl px-5   ">
                 {/* From */}
 
                 {/* Top header */}
@@ -50,11 +50,11 @@ const Edit = ({ isVisible, close }: any) => {
                                     All Projects
                                 </p>
                             </div>
-                            <div>
+                            {/* <div>
                                 <p className="text-[14px] text-[#969BA0] font-normal py-1">
                                     Lorem ipsum dolor sit amet, consectetur
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="flex gap-1 leading-none">

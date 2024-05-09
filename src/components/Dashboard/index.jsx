@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section >
       <Resume isVisible={showModal} close={() => setShowModal(false)} />
-      <div className="lg:pt-44 px-2 py-12 md:py-36 mt-12 md:mt-0  lg:px-16 bg-[#c8dce6] w-[100%] ">
+      <div className="lg:pt-44 px-2 py-40 md:py-36 mt-12 md:mt-0  lg:px-16 bg-[#c8dce6] w-[100%] ">
         <div className="grid grid-cols-1   sm:grid-cols-12 ">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}

@@ -41,7 +41,7 @@ const Edit = ({ isVisible, close }) => {
                                 className=" cursor-pointer h-[11px] w-[11px]"
                             />
                         </div>
-                        <div >
+                        {/* <div >
                             <div>
                                 <p className="text-[20px] text-[#000000]  font-medium">
                                     All Projects
@@ -52,7 +52,7 @@ const Edit = ({ isVisible, close }) => {
                                     Lorem ipsum dolor sit amet, consectetur
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="flex gap-1 leading-none">
                         <button

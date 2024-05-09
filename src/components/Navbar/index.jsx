@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed mx-auto w-full bg-[#00ABE4] box-border top-0 z-10 bg-opacity-100">
+    <nav className="fixed mx-auto w-full z-10 bg-[#00ABE4] box-border top-0  bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" className="text-2xl md:text-5xl font-semibold">
           <Image src={logo} alt="Alayian" className="h-12 w-20 md:h-28 md:w-36 lg:h-28 lg:w-44 xl:h-20 xl:w-28" />

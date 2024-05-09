@@ -17,14 +17,14 @@ function Portfolio() {
     <>
 
       <Edit isVisible={showModal} close={() => setShowModal(false)} />
-      <h1 className="heading">What I have done?</h1>
+      <h1 className="heading pt-24">What I have done?</h1>
 
 
 
 
 
 
-      <div class="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 mt-24  pt-20">
+      <div class="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16  md:mt-24  pt-20">
 
         {/* Smart waste management system */}
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
