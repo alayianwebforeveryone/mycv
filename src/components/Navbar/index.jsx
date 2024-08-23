@@ -1,5 +1,6 @@
 // components/Navbar.js
 "use client"
+import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import NavLink from './Navlink'
 import Link from 'next/link';
@@ -9,7 +10,6 @@ import logo from './../../../Assets/Images/My logo.png';
 import menu from './../../../Assets/Icons/menu.svg';
 import close from './../../../Assets/Icons/close.svg';
 
-import { usePathname } from 'next/navigation';
 
 const navLinks = [
   {
@@ -54,7 +54,7 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} isActive={router.pathname === link.path} />
+                <NavLink href={link.path} title={link.title} isActive={path === link.path} />
               </li>
             ))}
           </ul>
