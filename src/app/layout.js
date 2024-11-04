@@ -10,11 +10,15 @@ export const metadata = {
   title: "Alayian Saeed",
   description: "Web development",
 };
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#e9ebed] text-[#1d1e1e] ">
+      <body className={`bg-[#e9ebed] text-[#1d1e1e] font-roboto  ${roboto.className} `}>
         <Menu />
         
           {children} 

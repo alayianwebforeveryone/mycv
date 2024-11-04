@@ -10,12 +10,12 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS (Tailwind , Bootsrtap)</li>
-        <li>JavaScript</li>
-        <li>React js</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li className="mt-2">HTML</li>
+        <li className="mt-2">CSS (Tailwind , Bootsrtap)</li>
+        <li className="mt-2">JavaScript</li>
+        <li className="mt-2">JavaScript</li>
+        <li className="mt-2">React js</li>
+        <li className="mt-2">Next js</li>
       </ul>
     ),
   },
@@ -25,7 +25,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Software Engineering</li>
-        <p className="text-sm"> From Mirpur University of Science and Technology</p>
+        <p className="text-sm"> From Mirpur University of Science and Technology AJK, Pakistan </p>
       </ul>
     ),
   },
@@ -34,9 +34,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Introduction to HTML5 (Coursera)</li>
-        <li>Introduction to CSS3 (Coursera)</li>
-        <li>Interactivity with JavaScript (Coursera)</li>
+        <li className="mt-2">Introduction to HTML5 (Coursera)</li>
+        <li className="mt-2">Introduction to CSS3 (Coursera)</li>
+        <li className="mt-2">Interactivity with JavaScript (Coursera)</li>
       </ul>
     ),
   },
@@ -55,7 +55,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className=" w-full my-20 " id="about">
+    <section className="  w-full my-20 " id="about">
       <div className="py-8 px-12 flex-col  mb-56   md:flex-row    gap-4  flex md:gap-48 justify-between">
         <div className="rounded-t-full md:w-[25%] mt-16 md:mt-0 w-[80%]  mx-auto   ">
         <Image src={About} alt="profile"  className="rounded-t-full  object-contain"/>
