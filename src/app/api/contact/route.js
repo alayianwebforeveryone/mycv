@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import { NextResponse } from "next/server";
 import { mailOptions, transporter } from "../config/nodemailer";
 
@@ -7,7 +7,6 @@ import { mailOptions, transporter } from "../config/nodemailer";
 export async function POST(req,) {
   if (req.method === "POST") {
     const data = await req.json();
-    console.log("data recieve in form handler", data);
     
     try {
         console.log("processing in try case")
@@ -41,10 +40,8 @@ export async function POST(req,) {
         return NextResponse.json({ message: "form submited successfully" }, { status: 200 });
       }
       catch (error) {
-        console.log("Error sending mail:", error);
         return NextResponse.json({ message: "error while form processing" }, { status: 500 });
       }
-    // return NextResponse.json({ message: "Data   received" }, { status: 200 });
 
 
   } else {
