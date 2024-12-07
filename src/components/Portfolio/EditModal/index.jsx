@@ -5,7 +5,7 @@ import backarrowicon from '../../../../Assets/Icons/backarrow.svg'
 import expensesTracker from '../../../../Assets/Project/expensetracker.png'
 import Link from 'next/link';
 import swms from '../../../../Assets/Project/swms.png'
-import sss from "../../../../Assets/Project/sss.png"
+import techClan from "../../../../Assets/Project/tech-clan.png"
 import ybm from "../../../../Assets/Project/ybm.png"
 import essay from '../../../../Assets/Project/essay.png';
 import aiwriting from "../../../../Assets/Project/aiwriting.png";
@@ -74,13 +74,13 @@ const Edit = ({ isVisible, close }) => {
                 {/* row 1 */}
                 <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16   pt-12">
 
-                    {/* SSS */}
+                    {/* tech clan */}
 
                     <ProjectCard
-                        title="3S"
-                        description="S Software Solution"
-                        src={sss}
-                        linkText="https://alayianwebforeveryone.github.io/portfolio/"
+                        title="The Tech Clan"
+                        description="A portfolio site of a IT Complany"
+                        src={techClan}
+                        linkText="www.thetechclan.org"
 
                     />
 
