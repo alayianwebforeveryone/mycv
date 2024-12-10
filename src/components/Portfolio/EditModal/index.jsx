@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import backarrowicon from '../../../../Assets/Icons/backarrow.svg'
 import expensesTracker from '../../../../Assets/Project/expensetracker.png'
-import Link from 'next/link';
 import swms from '../../../../Assets/Project/swms.png'
 import techClan from "../../../../Assets/Project/tech-clan.png"
 import ybm from "../../../../Assets/Project/ybm.png"
@@ -80,7 +79,7 @@ const Edit = ({ isVisible, close }) => {
                         title="The Tech Clan"
                         description="A portfolio site of a IT Complany"
                         src={techClan}
-                        linkText="www.thetechclan.org"
+                        linkText="https://www.thetechclan.org/"
 
                     />
 
