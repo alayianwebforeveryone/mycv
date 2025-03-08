@@ -1,160 +1,124 @@
-"use clients"
+"use clients";
 import React from "react";
 import Image from "next/image";
-import backarrowicon from '../../../../Assets/Icons/backarrow.svg'
-import expensesTracker from '../../../../Assets/Project/expensetracker.png'
-import swms from '../../../../Assets/Project/swms.png'
-import techClan from "../../../../Assets/Project/tech-clan.png"
-import ybm from "../../../../Assets/Project/ybm.png"
-import essay from '../../../../Assets/Project/essay.png';
+import backarrowicon from "../../../../Assets/Icons/backarrow.svg";
+import festifyCo from "../../../../Assets/Project/festify co.png";
+import swms from "../../../../Assets/Project/swms.png";
+import techClan from "../../../../Assets/Project/tech-clan.png";
+import ybm from "../../../../Assets/Project/ybm.png";
+import essay from "../../../../Assets/Project/essay.png";
 import aiwriting from "../../../../Assets/Project/aiwriting.png";
 import ProjectCard from "../ProjectCard";
 
 const Edit = ({ isVisible, close }) => {
+  const projectShort = [
+    {
+      title: "SWMS",
+      description: "Smart Waste Management System",
+      linkText:
+        "https://ubiquitous-system-git-edit-colroute-saifqamar.vercel.app/",
+      src: swms,
+      isVideo: false,
+    },
+    {
+      title: "Your Buisness Matter",
+      description: "Your Buisness Matter",
+      linkText: "https://ybm.vercel.app/",
+      src: ybm,
+      isVideo: false,
+    },
+    {
+      title: "I tech Inventory System",
+      description: "AI Writing Services",
+      linkText: "https://itechpk-inventory.vercel.app/",
+      src: "/inventory.mp4",
+      isVideo: true,
+    },
 
+    {
+      title: "Essay",
+      description: "Essay Writing Services",
+      linkText:"https://essay-writing-services-7yaf.vercel.app/",
+        
+      src: essay,
+      isVideo: false,
+    },
+    {
+      title: "The Tech Clan",
+      description: "A portfolio site of a IT Complany",
+      linkText: "https://www.thetechclan.org/",
+      src: techClan,
+      isVideo: false,
+    },
+    {
+      title: "Festify Co",
+      description: "Event Management System",
+      linkText: "https://festifyco.vercel.app/",
+      src: festifyCo,
+      isVideo: false,
+    },
+  ];
 
+  const handleClose = (e) => {
+    if (e.target.id === "conatiner") close();
+  };
 
+  if (!isVisible) return null;
 
-    const handleClose = (e) => {
-        if (e.target.id === "conatiner") close();
-    }
+  return (
+    <div
+      id="conatiner"
+      onClick={handleClose}
+      className="  fixed inset-0 z-50  bg-black/25 flex justify-center items-center"
+    >
+      <div className="  w-[90%] lg:w-[80%] overflow-y-scroll hideScrollbar max-h-[85%] py-4 bg-white rounded-xl px-5    ">
 
-    if (!isVisible) return null;
-
-    return (
-
-
-
-        <div
-            id="conatiner"
-            onClick={handleClose}
-            className="  fixed inset-0 z-50  bg-black/25 flex justify-center items-center">
-
-            <div className="  w-[90%] lg:w-[70%] overflow-y-scroll hideScrollbar max-h-[70%] py-4 bg-white rounded-xl px-5   ">
-                {/* From */}
-
-                {/* Top header */}
-                <div className=" flex justify-between px-0 py-3  top-0  border-b-2">
-                    <div className="flex gap-3 ">
-                        <div className="mt-2">
-                            <Image
-                                src={backarrowicon}
-                                alt="arrowicon"
-                                onClick={close}
-                                className=" cursor-pointer h-[11px] w-[11px]"
-                            />
-                        </div>
-                        <div >
-                            <div>
-                                <p className="text-[20px] text-[#000000]  font-medium">
-                                    All Projects
-                                </p>
-                            </div>
-                            {/* <div>
-                                <p className="text-[14px] text-[#969BA0] font-normal py-1">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                </p>
-                            </div> */}
-                        </div>
-                    </div>
-                    <div className="flex gap-1 leading-none">
-                        <button
-                            type="button"
-                            onClick={close}
-                            className=" bg-[#D0DFF1] text-[#1A64BA] lg:text-[14px] px-3 rounded-lg text-[14px] font-semibold w-[83px] h-[45px]"
-                        >
-                            Cancel
-                        </button>
-
-                    </div>
-
-                </div>
-
-                {/* row 1 */}
-                <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16   pt-12">
-
-                    {/* tech clan */}
-
-                    <ProjectCard
-                        title="The Tech Clan"
-                        description="A portfolio site of a IT Complany"
-                        src={techClan}
-                        linkText="https://www.thetechclan.org/"
-
-                    />
-
-                    {/* AI Writing */}
-                    <ProjectCard
-                        title="AI Services"
-                        description="AI Writing Services"
-                        linkText="https://www.aiwriter.services/"
-                        alt='ybm'
-                        src={aiwriting}
-                    />
-
-                    {/* Essay Writing Services */}
-
-
-
-                    <ProjectCard
-                        title="Essay"
-                        description="Essay Writing Services"
-                        src={essay}
-                        linkText="https://essay-writing-services-7yaf.vercel.app/"
-
-                    />
-
-
-
-
-                </div>
-
-                {/* row 2 */}
-                <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 mt-8  pt-8">
-
-                    {/* Smart waste management system */}
-                    <ProjectCard
-                        title="SWMS"
-                        description="Smart Waste Management System"
-                        linkText="https://ubiquitous-system-git-edit-colroute-saifqamar.vercel.app/"
-                        alt='swms'
-                        src={swms} />
-
-
-
-                    {/* expense tracker */}
-
-                    <ProjectCard
-                        title="Expense Tracker"
-                        description="Track your daily expenses"
-                        linkText="https://track-expenses-three.vercel.app/"
-                        alt='expense'
-                        src={expensesTracker}
-                    />
-                    {/* YBM ADMIN */}
-
-                    <ProjectCard
-                        title="YBM"
-                        description="Your Buisness Matter"
-                        linkText="https://ybm.vercel.app/"
-                        alt='ybm'
-                        src={ybm} />
-
-
-                </div>
-
-
+        {/* Top header */}
+        <div className=" flex justify-between px-0 py-3 sticky z-50 bg-white  top-0  border-b-2">
+          <div className="flex gap-3 ">
+            <div className="mt-2">
+              <Image
+                src={backarrowicon}
+                alt="arrowicon"
+                onClick={close}
+                className=" cursor-pointer h-[11px] w-[11px]"
+              />
             </div>
+            <div>
+              <div>
+                <p className="text-[20px] text-[#000000]  font-medium">
+                  All Projects
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-1 leading-none">
+            <button
+              type="button"
+              onClick={close}
+              className=" bg-[#D0DFF1] text-[#1A64BA] lg:text-[14px] px-3 rounded-lg text-[14px] font-semibold w-[83px] h-[45px]"
+            >
+              Cancel
+            </button>
+          </div>
         </div>
 
-
-
-
-
-
-
-
-
-    );
+        <div className="flex flex-col md:flex-row px-8 md:px-4 justify-center gap-16 flex-wrap   pt-12">
+          {projectShort.map((project, index) => {
+            return (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                linkText={project.linkText}
+                src={project.src}
+                isVideo={project.isVideo}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 };
 export default Edit;
